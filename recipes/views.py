@@ -2,7 +2,8 @@ from django.shortcuts import render
 from django.http import HttpResponse
 
 def home (request):
-    return HttpResponse('Home9')
+    #busca o template na pasta template automaticamente
+    return render(request, 'recipes/home.html')
 
 def contato (request):
     return HttpResponse('Contato9')
